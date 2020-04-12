@@ -1,5 +1,4 @@
 #include <benchmark/benchmark.h>
-#include <iostream>
 #include <vector>
 
 static void VectorPushBackInt(benchmark::State& state) {
@@ -20,7 +19,7 @@ static void VectorInsertFrontInt(benchmark::State& state) {
     }
 }
 
-BENCHMARK(VectorPushBackInt)->Range(2, 2<<12)->Unit(benchmark::kMillisecond);
-BENCHMARK(VectorInsertFrontInt)->Range(2, 2<<12)->Unit(benchmark::kMillisecond);
+BENCHMARK(VectorPushBackInt)->Range(2, 1<<14)->Unit(benchmark::kMillisecond);
+BENCHMARK(VectorInsertFrontInt)->Range(2, 1<<14)->Unit(benchmark::kMillisecond);
 
 BENCHMARK_MAIN();

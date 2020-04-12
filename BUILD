@@ -13,3 +13,11 @@ cc_binary(
         "//third_party/benchmark:benchmark"
     ]
 )
+
+cc_binary(
+    name = "find",
+    srcs = ["find.cc"],
+    deps = [
+        "//third_party/benchmark:benchmark"
+    ]
+)
