@@ -1,1 +1,4 @@
 /bazel-*
+.vs
+third_party
+bazel.exe

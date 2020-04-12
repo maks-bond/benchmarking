@@ -15,8 +15,16 @@ cc_binary(
 )
 
 cc_binary(
-    name = "find",
-    srcs = ["find.cc"],
+    name = "find_unordered_set",
+    srcs = ["find_unordered_set.cc"],
+    deps = [
+        "//third_party/benchmark:benchmark"
+    ]
+)
+
+cc_binary(
+    name = "find_set",
+    srcs = ["find_set.cc"],
     deps = [
         "//third_party/benchmark:benchmark"
     ]
