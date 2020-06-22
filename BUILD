@@ -21,3 +21,11 @@ cc_binary(
         "//third_party/benchmark:benchmark"
     ]
 )
+
+cc_binary(
+    name = "concurrent_increment",
+    srcs = ["concurrent_increment.cc"],
+    deps = [
+        "//third_party/benchmark:benchmark"
+    ]
+)
